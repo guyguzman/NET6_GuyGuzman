@@ -33,20 +33,20 @@
     }
 
     .darkglass {
-        background-color: rgba(0, 0, 0, .2);
+        background-color: rgba(0, 0, 0, .4);
         width: 100%;
         height: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 30% 55% 15%;
         align-items: center;
         justify-items: center;
     }
 
     .panel {
-        width: clamp(360px, 80%, 500px);
-        background: rgba( 255, 255, 255, 0.4 );
-        backdrop-filter: blur(5px);
+        width: clamp(300px, 80%, 400px);
+        background: rgba( 255, 255, 255, 0.5 );
+        backdrop-filter: blur(8px);
         justify-self: center;
         align-self: center;
         height: 80%;
@@ -55,12 +55,25 @@
         padding: 20px;
     }
 
-    .panelSection {
+    .panelTitle {
         font-weight: 600;
-        font-size: 24px;
-        margin-bottom: 10px;
+        font-size: 30px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        margin-top: 15px;
     }
 
+    .panelTitle_Level1 {
+        font-weight: 400;
+        font-size: 24px;
+        margin-top: 20px;
+        color: #202020;
+        margin-bottom: 20px;
+    }
+
+    .panelBody_Level1 {
+        margin-left: 20px;
+    }
     .panelBody {
         font-size: 18px;
         line-height: 24px;
@@ -73,21 +86,102 @@
 
 
         <div class="panel" id="panel1" style="grid-column-start: 1; grid-column-end: 2; grid-row-start: 2; grid-row-end: 3;">
-            <div class="panelSection">
+            <div class="panelTitle">
+                Skill Set
+            </div>
+            <div class="panelBody">
+                <div class="panelTitle_Level1">
+                    Microsoft
+                </div>
+                <div class="panelBody_Level1">
+                    Experienced with the Microsoft ecosystem since the first .NET release over 20 years ago. I develop in this
+                    ecosystem using C#, SQL Server, Visual Studio 2022, Entity Framework and the Azure cloud services. Recent activity
+                    has been using Razor pages with NET 6.
+                </div>
+            </div>
+            <div class="panelTitle_Level1">
+                Other Skills
+            </div>
+            <div class="panelBody_Level1">
+                HTML5, CSS, Javascript
+                <br /><br />
+                Database architecture (transform business rules and workflows into a usable relational database)
+                <br /><br />
+            </div>
+        </div>
+
+        <div class="panel" id="panel2" style="grid-column-start: 2; grid-column-end: 3; grid-row-start: 2; grid-row-end: 3;">
+            <div class="panelTitle">
                 Projects
             </div>
             <div class="panelBody">
-                On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.
+                <div class="panelTitle_Level1">
+                    Microsoft
+                </div>
+                <div class="panelBody_Level1">
+                    Experienced with the Microsoft ecosystem since the first .NET release over 20 years ago. I develop in this
+                    ecosystem using C#, SQL Server, Visual Studio 2022, Entity Framework and the Azure cloud services. Recent activity
+                    has been using Razor pages with NET 6.
+                </div>
+            </div>
+            <div class="panelTitle_Level1">
+                Other Skills
+            </div>
+            <div class="panelBody_Level1">
+                HTML5, CSS, Javascript
+                <br /><br />
+                Database architecture (transform business rules and workflows into a usable relational database)
+                <br /><br />
             </div>
         </div>
-        <div class="panel" id="panel2" style="grid-column-start: 2; grid-column-end: 3; grid-row-start: 2; grid-row-end: 3;">
-            On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.
-        </div>
+
         <div class="panel" id="panel3" style="grid-column-start: 3; grid-column-end: 4; grid-row-start: 2; grid-row-end: 3;">
-            On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.
+            <div class="panelTitle">
+                Major Projects
+            </div>
+            <div class="panelBody">
+                <div class="panelTitle_Level1">
+                    State of Nevada
+                </div>
+                <div class="panelBody_Level1">
+                    Experienced with the Microsoft ecosystem since the first .NET release over 20 years ago. I develop in this
+                    ecosystem using C#, SQL Server, Visual Studio 2022, Entity Framework and the Azure cloud services. Recent activity
+                    has been using Razor pages with NET 6.
+                </div>
+            </div>
+            <div class="panelTitle_Level1">
+                Delivery Driver Management
+            </div>
+            <div class="panelBody_Level1">
+                HTML5, CSS, Javascript
+                <br /><br />
+                Database architecture (transform business rules and workflows into a usable relational database)
+                <br /><br />
+            </div>
         </div>
+
+        <div class="panel" id="panel4" style="grid-column-start: 4; grid-column-end: 4; grid-row-start: 2; grid-row-end: 3;">
+            <div class="panelTitle">
+                Education
+            </div>
+            <div class="panelBody">
+                <div class="panelTitle_Level1">
+                    University of Notre Dame
+                </div>
+                <div class="panelBody_Level1">
+                    Physics, MS
+                </div>
+            </div>
+            <div class="panelTitle_Level1">
+                Loyola Marymount University
+            </div>
+            <div class="panelBody_Level1">
+                Physics, MS
+            </div>
+        </div>
+
         <div id="divGuyGuzman" style="clip-path: url(#clipGuyGuzman); backdrop-filter: blur(5px);
-                                      grid-column-start: 1; grid-column-end: 4; grid-row-start: 1; grid-row-end: 2;
+                                      grid-column-start: 1; grid-column-end: 5; grid-row-start: 1; grid-row-end: 2;
                                       width: 70%">
             <svg id="svgGuyGuzman" viewBox="0 0 100 10.92033" fill="#ffffff" fill-opacity=".6">
                 <defs>
@@ -165,7 +259,7 @@
         </div>
 
         <div id="divEmail" style="backdrop-filter: blur(5px); clip-path: url(#clipEmail); margin-top: 100px; width: 70%;
-                                  grid-column-start: 3; grid-column-end: 4; grid-row-start: 3; grid-row-end: 4; align-self: end;
+                                  grid-column-start: 4; grid-column-end: 5; grid-row-start: 3; grid-row-end: 4; align-self: end;
                                          margin-bottom: 50px; justify-self: end; margin-right: 50px;">
             <svg id="svgEmail">
                 <defs>

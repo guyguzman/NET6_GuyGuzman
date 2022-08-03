@@ -35,8 +35,8 @@
 
     .darkglass {
         background-color: rgba(0, 0, 0, .4);
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 30% 40% 30%;
@@ -44,41 +44,7 @@
         justify-items: center;
     }
 
-    .panel {
-        width: clamp(300px, 80%, 400px);
-        background: rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(8px);
-        justify-self: center;
-        align-self: start;
-        font-size: 18px;
-        line-height: 24px;
-        padding: 20px;
-    }
 
-    .panelTitle {
-        font-weight: 600;
-        font-size: 30px;
-        margin-bottom: 20px;
-        text-transform: uppercase;
-        margin-top: 15px;
-    }
-
-    .panelTitle_Level1 {
-        font-weight: 400;
-        font-size: 24px;
-        margin-top: 20px;
-        color: #202020;
-        margin-bottom: 20px;
-    }
-
-    .panelBody_Level1 {
-        margin-left: 20px;
-    }
-
-    .panelBody {
-        font-size: 18px;
-        line-height: 24px;
-    }
 
     .resume {
         display: grid;
@@ -234,110 +200,161 @@
 
 
     </div>
-</div>
 
 
-<div style="margin-top: 0px;">
+    <style>
+        .panel {
+            width: clamp(300px, 80%, 500px);
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(8px);
+            justify-self: center;
+            align-self: start;
+            font-size: 18px;
+            line-height: 24px;
+        }
 
-    <div class="resume" style="padding-top: 100px; background-color: transparent;">
+        .panelTitle {
+            font-weight: 400;
+            font-size: 30px;
+            background-color: #404040;
+            color: white;
+            text-transform: uppercase;
+            width: 100%;
+            height: 60px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100%;
+            align-items: center;
+            justify-items: center;
+        }
 
-        <div class="panel" id="panel1" style="grid-column-start: 1; grid-column-end: 2;">
-            <div class="panelTitle">
-                Skill Set
-            </div>
-            <div class="panelBody">
-                <div class="panelTitle_Level1">
-                    Microsoft
+        .panelBody {
+            padding: 0px 20px 20px 40px;
+        }
+
+        .panelTitle_Level1 {
+            font-weight: 500;
+            font-size: 24px;
+            color: #202020;
+            margin-top: 24px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .panelBody_Level1 {
+            margin-left: 20px;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+    </style>
+
+
+    <div style="margin-top: 0px;background-color: rgba(0, 0, 0, .4);">
+
+        <div class="resume" style="padding-top: 300px; background-color: transparent;">
+
+            <div class="panel" id="panel1" style="grid-column-start: 1; grid-column-end: 2;">
+
+                <div class="panelTitle">
+                    Skill Sets
                 </div>
-                <div class="panelBody_Level1">
-                    Experienced with the Microsoft ecosystem since the first .NET release over 20 years ago. I develop in this
-                    ecosystem using C#, SQL Server, Visual Studio 2022, Entity Framework and the Azure cloud services. Recent activity
-                    has been using Razor pages with NET 6.
+
+                <div class="panelBody">
+                    <div class="panelTitle_Level1">
+                        Microsoft
+                    </div>
+                    <div class="panelBody_Level1">
+                        Experienced with the Microsoft ecosystem since the first .NET release over 20 years ago. I develop in this
+                        ecosystem using C#, SQL Server, Visual Studio 2022, Entity Framework and the Azure cloud services. Recent activity
+                        has been using Razor pages with NET 6.
+                    </div>
+                    <div class="panelTitle_Level1">
+                        Other Skills
+                    </div>
+                    <div class="panelBody_Level1">
+                        HTML5, CSS, Javascript
+                        <br /><br />
+                        Database architecture (transform business rules and work flows into a usable relational database)
+                        <br /><br />
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="panel" id="panel2" style="grid-column-start: 2; grid-column-end: 3;">
+                <div class="panelTitle">
+                    Projects
+                </div>
+                <div class="panelBody">
+                    <div class="panelTitle_Level1">
+                        Microsoft
+                    </div>
+                    <div class="panelBody_Level1">
+                        Experienced with the Microsoft ecosystem since the first .NET release over 20 years ago. I develop in this
+                        ecosystem using C#, SQL Server, Visual Studio 2022, Entity Framework and the Azure cloud services. Recent activity
+                        has been using Razor pages with NET 6.
+                    </div>
+                    <div class="panelTitle_Level1">
+                        Other Skills
+                    </div>
+                    <div class="panelBody_Level1">
+                        HTML5, CSS, Javascript
+                        <br /><br />
+                        Database architecture (transform business rules and workflows into a usable relational database)
+                        <br /><br />
+                    </div>
                 </div>
             </div>
-            <div class="panelTitle_Level1">
-                Other Skills
+
+            <div class="panel" id="panel3" style="grid-column-start: 3; grid-column-end: 4;">
+                <div class="panelTitle">
+                    Major Projects
+                </div>
+                <div class="panelBody">
+                    <div class="panelTitle_Level1">
+                        State of Nevada
+                    </div>
+                    <div class="panelBody_Level1">
+                        Experienced with the Microsoft ecosystem since the first .NET release over 20 years ago. I develop in this
+                        ecosystem using C#, SQL Server, Visual Studio 2022, Entity Framework and the Azure cloud services. Recent activity
+                        has been using Razor pages with NET 6.
+                    </div>
+                    <div class="panelTitle_Level1">
+                        Delivery Driver Management
+                    </div>
+                    <div class="panelBody_Level1">
+                        HTML5, CSS, Javascript
+                        <br /><br />
+                        Database architecture (transform business rules and workflows into a usable relational database)
+                        <br /><br />
+                    </div>
+                </div>
             </div>
-            <div class="panelBody_Level1">
-                HTML5, CSS, Javascript
-                <br /><br />
-                Database architecture (transform business rules and work flows into a usable relational database)
-                <br /><br />
+
+            <div class="panel" id="panel4" style="grid-column-start: 4; grid-column-end: 4;">
+                <div class="panelTitle">
+                    Education
+                </div>
+                <div class="panelBody">
+                    <div class="panelTitle_Level1">
+                        University of Notre Dame
+                    </div>
+                    <div class="panelBody_Level1">
+                        Physics, MS
+                    </div>
+                    <div class="panelTitle_Level1">
+                        Loyola Marymount University
+                    </div>
+                    <div class="panelBody_Level1">
+                        Physics, MS
+                    </div>
+                </div>
             </div>
+
         </div>
-
-        <div class="panel" id="panel2" style="grid-column-start: 2; grid-column-end: 3;">
-            <div class="panelTitle">
-                Projects
-            </div>
-            <div class="panelBody">
-                <div class="panelTitle_Level1">
-                    Microsoft
-                </div>
-                <div class="panelBody_Level1">
-                    Experienced with the Microsoft ecosystem since the first .NET release over 20 years ago. I develop in this
-                    ecosystem using C#, SQL Server, Visual Studio 2022, Entity Framework and the Azure cloud services. Recent activity
-                    has been using Razor pages with NET 6.
-                </div>
-            </div>
-            <div class="panelTitle_Level1">
-                Other Skills
-            </div>
-            <div class="panelBody_Level1">
-                HTML5, CSS, Javascript
-                <br /><br />
-                Database architecture (transform business rules and workflows into a usable relational database)
-                <br /><br />
-            </div>
-        </div>
-
-        <div class="panel" id="panel3" style="grid-column-start: 3; grid-column-end: 4;">
-            <div class="panelTitle">
-                Major Projects
-            </div>
-            <div class="panelBody">
-                <div class="panelTitle_Level1">
-                    State of Nevada
-                </div>
-                <div class="panelBody_Level1">
-                    Experienced with the Microsoft ecosystem since the first .NET release over 20 years ago. I develop in this
-                    ecosystem using C#, SQL Server, Visual Studio 2022, Entity Framework and the Azure cloud services. Recent activity
-                    has been using Razor pages with NET 6.
-                </div>
-            </div>
-            <div class="panelTitle_Level1">
-                Delivery Driver Management
-            </div>
-            <div class="panelBody_Level1">
-                HTML5, CSS, Javascript
-                <br /><br />
-                Database architecture (transform business rules and workflows into a usable relational database)
-                <br /><br />
-            </div>
-        </div>
-
-        <div class="panel" id="panel4" style="grid-column-start: 4; grid-column-end: 4;">
-            <div class="panelTitle">
-                Education
-            </div>
-            <div class="panelBody">
-                <div class="panelTitle_Level1">
-                    University of Notre Dame
-                </div>
-                <div class="panelBody_Level1">
-                    Physics, MS
-                </div>
-            </div>
-            <div class="panelTitle_Level1">
-                Loyola Marymount University
-            </div>
-            <div class="panelBody_Level1">
-                Physics, MS
-            </div>
-        </div>
-
     </div>
-
 </div>
 <script>
 

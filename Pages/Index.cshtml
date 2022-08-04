@@ -7,6 +7,11 @@
     Layout = null;
 }
 
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guy Guzman</title>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,14 +49,6 @@
         justify-items: center;
     }
 
-
-
-    .resume {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        align-items: center;
-        justify-items: center;
-    }
 </style>
 
 <div class="landingpage">
@@ -203,12 +200,25 @@
 
 
     <style>
+
+        .resume {
+            display: flex;
+            gap: 60px;
+            flex-wrap: wrap;
+            align-items: stretch;
+            padding-top: 300px;
+            background-color: transparent;
+            margin-right: auto;
+            margin-left: auto;
+            justify-content: center;
+        }
+
         .panel {
-            width: clamp(300px, 80%, 500px);
+            width: clamp(360px, 90%, 500px);
             background: rgba(255, 255, 255, 0.5);
             backdrop-filter: blur(8px);
             justify-self: center;
-            align-self: start;
+            align-self: stretch;
             font-size: 18px;
             line-height: 24px;
         }
@@ -252,15 +262,12 @@
 
 
     <div style="margin-top: 0px;background-color: rgba(0, 0, 0, .4);">
+        <div class="resume" style="">
 
-        <div class="resume" style="padding-top: 300px; background-color: transparent;">
-
-            <div class="panel" id="panel1" style="grid-column-start: 1; grid-column-end: 2;">
-
+            <div class="panel">
                 <div class="panelTitle">
                     Skill Sets
                 </div>
-
                 <div class="panelBody">
                     <div class="panelTitle_Level1">
                         Microsoft
@@ -280,10 +287,9 @@
                         <br /><br />
                     </div>
                 </div>
-
             </div>
 
-            <div class="panel" id="panel2" style="grid-column-start: 2; grid-column-end: 3;">
+            <div class="panel">
                 <div class="panelTitle">
                     Projects
                 </div>
@@ -302,13 +308,13 @@
                     <div class="panelBody_Level1">
                         HTML5, CSS, Javascript
                         <br /><br />
-                        Database architecture (transform business rules and workflows into a usable relational database)
+                        Database architecture (transform business rules and work flows into a usable relational database)
                         <br /><br />
                     </div>
                 </div>
             </div>
 
-            <div class="panel" id="panel3" style="grid-column-start: 3; grid-column-end: 4;">
+            <div class="panel">
                 <div class="panelTitle">
                     Major Projects
                 </div>
@@ -333,7 +339,7 @@
                 </div>
             </div>
 
-            <div class="panel" id="panel4" style="grid-column-start: 4; grid-column-end: 4;">
+            <div class="panel">
                 <div class="panelTitle">
                     Education
                 </div>
@@ -354,6 +360,7 @@
             </div>
 
         </div>
+    <div style="height: 100px;"></div>
     </div>
 </div>
 <script>

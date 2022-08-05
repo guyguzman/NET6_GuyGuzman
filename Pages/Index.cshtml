@@ -331,6 +331,9 @@
             align-self: stretch;
             font-size: 18px;
             line-height: 24px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 60px minmax(120px,auto);
         }
 
         .panelTitle {
@@ -545,6 +548,9 @@
 
             <style>
                 .download {
+
+                }
+                .downloadButton {
                     margin-top: 0px;
                     margin-bottom: 0px;
                     width: 200px;
@@ -559,7 +565,7 @@
                     justify-self: center;
                 }
 
-                .download:hover {
+                .downloadButton:hover {
                     background-color: rgba(255, 255, 255, .8);
                 }
             </style>
@@ -568,7 +574,7 @@
                     RESUME
                 </div>
                 <div style="display: grid; height: 100%; grid-template-columns: 100%; grid-template-rows: 100%; align-items: center; justify-items: center;">
-                    <div class="download" onClick="downloadResume()">
+                    <div class="downloadButton" onClick="downloadResume()">
                         DOWNLOAD RESUME
                     </div>
                 </div>

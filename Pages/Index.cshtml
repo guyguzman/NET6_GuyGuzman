@@ -41,7 +41,7 @@
     }
 
     .darkglass {
-        background-color: rgba(0, 0, 0, .4);
+        background-color: rgba(0, 0, 0, .3);
         width: 100vw;
         height: 100vh;
         display: grid;
@@ -101,7 +101,7 @@
 
     @@media screen and (max-width: 600px) {
 
-        
+
         .landingpage {
             display: grid;
             background-image: url("img/Background_BeachChairsUmbrella_Mobile.jpg");
@@ -110,7 +110,7 @@
         }
 
         .darkglass {
-            background-color: rgba(0, 0, 0, .4);
+            background-color: rgba(0, 0, 0, .3);
             width: 100vw;
             height: 100vh;
             height: calc(var(--vh, 1vh) * 100);
@@ -350,6 +350,17 @@
 
         .panelBody {
             padding: 0px 20px 20px 40px;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 24px;
+            color: #202020;
+        }
+
+        .panelBody_Level0 {
+            margin-top: 30px;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 24px;
         }
 
         .panelTitle_Level1 {
@@ -369,37 +380,68 @@
         }
 
         @@media screen and (max-width: 600px) {
-          
+
+            .panelBody_Level0 {
+                margin-top: 30px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 24px;
+            }
+
             .panelBody_Level1 {
                 margin-left: 20px;
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 24px;
-            }}
+            }
+        }
     </style>
 
-    <div style="margin-top: 0px;background-color: rgba(0, 0, 0, .4);">
+    <div style="margin-top: 0px;background-color: rgba(0, 0, 0, .3);">
         <div class="resume" style="">
+
             <div class="panel">
                 <div class="panelTitle">
-                    Skill Sets
+                    Overview
+                </div>
+                <div class="panelBody">
+                    <div class="panelBody_Level0">
+                        I am a senior full-stack Microsoft developer. This includes database architecture, C# coding, UI and UX design,
+                        API development, Azure (include Azure App Service, Azure SQL, Azure Active Directory B2C,
+                        Azure Blob Storage, Azure SignalR), authentication, Entity Framework, Razor Pages, WPF (XAML),
+                        Visual Studio, Visual Studio Code, .NET from ASP.NET through .NET 6. I have 20 years of experience
+                        with .NET development.
+                        <br /><br />
+                        I am adept at distilling business rules and processes into abstract models that can used to
+                        design database schema and code functionality. I have abstracted complex investment structures,
+                        complicated regulatory systems and well as simpler business models. I have extremely good
+                        communication skills (verbal and written) and good interpersonal skills, making it easy to work
+                        and interface with others.
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panelTitle">
+                    Core Skill Sets
                 </div>
                 <div class="panelBody">
                     <div class="panelTitle_Level1">
-                        Microsoft
+                        Microsoft Technologies
                     </div>
                     <div class="panelBody_Level1">
-                        Experienced with the Microsoft ecosystem since the first .NET release over 20 years ago. I develop in this
-                        ecosystem using C#, SQL Server, Visual Studio 2022, Entity Framework and the Azure cloud services. Recent activity
-                        has been using Razor pages with NET 6.
+                        Microsoft .NET (ASP.NET through .NET 6), SQL Server, C#, ASP.NET, Razor Pages,
+                        MVC, Viual Studio, Visual Studio Code, IIS, Azure Cloud (including SQL Server, App Service, Blob Storage,
+                        SignalR, Active Directory B2C), SSMS, SSIS, SSRS.
                     </div>
                     <div class="panelTitle_Level1">
-                        Other Skills
+                        Ancillary Skills
                     </div>
                     <div class="panelBody_Level1">
-                        HTML5, CSS, Javascript
+                        HTML5, CSS, Javascript, ER software
                         <br /><br />
-                        Database architecture (transform business rules and work flows into a usable relational database)
+                        Adobe Creative Suite (Photoshop, Illustrator, Premiere, After Effects, Audition)
                         <br /><br />
                     </div>
                 </div>
@@ -407,51 +449,77 @@
 
             <div class="panel">
                 <div class="panelTitle">
-                    Projects
+                    State of Nevada
                 </div>
                 <div class="panelBody">
                     <div class="panelTitle_Level1">
-                        Microsoft
+                        Medical Marijuana Program
                     </div>
                     <div class="panelBody_Level1">
-                        Experienced with the Microsoft ecosystem since the first .NET release over 20 years ago. I develop in this
-                        ecosystem using C#, SQL Server, Visual Studio 2022, Entity Framework and the Azure cloud services. Recent activity
-                        has been using Razor pages with NET 6.
+                        Developed and implemented the Nevada Medical Marijuana software system used for both the
+                        industrial side (dispensaries, lab, cultivation and production) and the patient side. I was
+                        the sole developer which entailed both translating business requirements into software requirements,
+                        database design and coding (ASP.NET). The project started in the Summer 2014 and completed
+                        in Summer 2017. I introducted bar code technology into the process to yield faster processing and
+                        lower data entry errors.
                     </div>
                     <div class="panelTitle_Level1">
-                        Other Skills
+                        Technologies Used
                     </div>
                     <div class="panelBody_Level1">
-                        HTML5, CSS, Javascript
-                        <br /><br />
-                        Database architecture (transform business rules and work flows into a usable relational database)
-                        <br /><br />
+                        ASP.NET, Visual Studio, C#, 3rd party UI tools, Toad data modeler, Aspose library,
+                        barcode generation and barcode OCR, PDF generation, HTML5, CSS, Javascript.
                     </div>
                 </div>
             </div>
 
             <div class="panel">
                 <div class="panelTitle">
-                    Major Projects
+                    EasyDMR
                 </div>
                 <div class="panelBody">
                     <div class="panelTitle_Level1">
-                        State of Nevada
+                        Food Delivery Driver Management
                     </div>
                     <div class="panelBody_Level1">
-                        Experienced with the Microsoft ecosystem since the first .NET release over 20 years ago. I develop in this
-                        ecosystem using C#, SQL Server, Visual Studio 2022, Entity Framework and the Azure cloud services. Recent activity
-                        has been using Razor pages with NET 6.
+                        Using .NET Core, designed and developed a web application to manage driver documents (driver's license,
+                        registration and insurance) and calculate the driver's per mile reimbursement rate. Store
+                        owners create an account and add one or more stores to it. The drivers create their own account
+                        and connect to the store account. Drivers upload their driver's license, registration and
+                        insurance documents. They enter their vehicle information (year, make, model and trim) using
+                        dropdowns. The software calculates a mileage reimbursement rate based on their zip code and vehicle.
+                        This was a three year project that completed in Summer 2022.
                     </div>
                     <div class="panelTitle_Level1">
-                        Delivery Driver Management
+                        Technologies Used
                     </div>
                     <div class="panelBody_Level1">
-                        HTML5, CSS, Javascript
-                        <br /><br />
-                        Database architecture (transform business rules and workflows into a usable relational database)
-                        <br /><br />
+                        Used .NET Core (through NET 6), Visual Studio, C#, 3rd party UI tools, Toad data modeler,
+                        SMS notifications, Signal R, Azure App Server, Azur Blob Storage, Azure Active
+                        Directory B2C, PDF generation, Stripe (credit card processing), HTML5, CSS, Javascript.
                     </div>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panelTitle">
+                    Other
+                </div>
+                <div class="panelBody">
+                    <div class="panelTitle_Level1">
+                        Medical, Financial, Advertising
+                    </div>
+                    <div class="panelBody_Level1">
+                        Consulted with Weyerhaeuser Realty Investors (subsidary of Weyerhaeuser) for 15 years on projects
+                        ranging from networking to software development for financial forecasting. The software I developed
+                        for Weyerhaeuser played a critical role in their future financial planning.
+                        This was a very long arrangement in the
+                        consulting world and also assisted them in a variety of other roles.
+                        <br /><br />
+                        Consulted with hospitals and other commercial clients on a variety of programs from IT infrastructure,
+                        desktop applications, web applications, networking, server configuration, etc.
+                    </div>
+
                 </div>
             </div>
 
@@ -470,7 +538,38 @@
                         Loyola Marymount University
                     </div>
                     <div class="panelBody_Level1">
-                        Physics, MS
+                        Physics, BS
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                .download {
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                    width: 200px;
+                    height: 40px;
+                    display: grid;
+                    grid-template-rows: 100%;
+                    grid-template-columns: 100%;
+                    align-items: center;
+                    justify-items: center;
+                    background-color: rgba(255, 255, 255, .4);
+                    align-self: center;
+                    justify-self: center;
+                }
+
+                .download:hover {
+                    background-color: rgba(255, 255, 255, .8);
+                }
+            </style>
+            <div class="panel">
+                <div class="panelTitle">
+                    RESUME
+                </div>
+                <div style="display: grid; height: 100%; grid-template-columns: 100%; grid-template-rows: 100%; align-items: center; justify-items: center;">
+                    <div class="download" onClick="downloadResume()">
+                        DOWNLOAD RESUME
                     </div>
                 </div>
             </div>
@@ -483,10 +582,7 @@
 
 <script>
 
-
-
     $(document).ready(function() {
-
 
         let vh = window.innerHeight * 0.01;
         document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -518,6 +614,30 @@
         };
 
     });
+
+    function downloadResume() {
+
+        request = new XMLHttpRequest();
+        var docUrl = "https://guyguzman.com/doc/GuyGuzmanResume20220801.pdf";
+        var filename = "GuyGuzmanResume.pdf";
+
+        console.log("Inside download " + docUrl);
+
+        request.responseType = "blob";
+        request.open("get", docUrl, true);
+        request.send();
+
+        request.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                const imageURL = window.URL.createObjectURL(this.response);
+                const anchor = document.createElement("a");
+                anchor.href = imageURL;
+                anchor.download = filename;
+                document.body.appendChild(anchor);
+                anchor.click();
+            }
+        };
+    }
 
     function setViewBoxClipPathScale(svgId, clipPathId) {
 
